@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta content="telephone=no" name="format-detection" />
+	<title>Document</title>
+	<style>
+	textarea{ width: 100%; }
+	.des{
+		padding: 30px 40px 20px;
+		background-color: #DADADA;
+		margin-bottom: 40px;
+		position: relative;
+	}
+	.des:before{
+		content: '说明:';
+		font: bold 16px/1.5 \5FAE\8F6F\96C5\9ED1;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+	.des > p {
+		font-size: 12px;
+		padding-left: 20px;
+	}
+	.des > p:nth-child(odd){
+		font-size: 14px;
+		background-color: #ADADAD;
+		padding: 5px 0 5px 10px;
+	}
+	</style>
+</head>
+<body>
+<h1>移动端web开发</h1>
+<div class="des">
+	<p>移动端CSS RESET <a href="http://blog.csdn.net/jiestyle21/article/details/9243045" title="手机版reset">传送门</a></p>
+</div>
+<div class="des">
+	<p>第一个meta标签表示：强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览；</p>
+	<p>第二个meta标签是iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览；</p>
+	<p>第三个meta标签也是iphone的私有标签，它指定的iphone中safari顶端的状态条的样式；</p>
+	<p>第四个meta标签表示：告诉设备忽略将页面中的数字识别为电话号码</p>
+	<textarea name="" id="" cols="30" rows="5">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+</textarea>
+</div>
+
+<div class="des">
+	<p>iOS中如何彻底禁止用户在新窗口打开页面</p>
+	<p>-webkit-touch-callout样式属性为none来禁止iOS弹出这些按钮。这个技 巧仅适用iOS对于Android平台则无效。</p>
+	<p>iOS中如何禁止用户保存图片＼复制图片</p>
+	<p>-webkit-touch-callout为none也会禁止设备弹出列表按钮，这样用户就无法保存＼复制你的图片了。</p>
+	<p>iOS中如何禁止用户选中文字</p>
+	<p>-webkit-user-select属性为none便可以禁止iOS用户选中文字。</p>
+</div>
+
+<div class="des">
+	<p>-webkit-tap-highlight-color:rgba(0,0,0,0)</p>
+	<p>手机端点击链接或者Input等时，通过这句可以取消。</p>
+	<p>-webkit-user-select:none ; -moz-user-select:none;</p>
+	<p>禁止用户进行复制.选择.</p>
+	<p>-webkit-appearance:none</p>
+	<p>webkit引擎的浏览器取消默认样式</p>
+	<p>-webkit-overflow-scrolling : touch; </p>
+	<p>现在很多for Mobile的HTML5网页内都有快速滚动和回弹的效果，看上去和原生app的效率都有得一拼。要实现这个效果很简单，只需要加一行css代码即可</p>
+	<p>-webkit-overflow-scrolling : touch;</p>
+	<p>在webkit下，滚动的时候有弹性，更像原生滚动条一样 <a href="demo/scrolling.html" title="demo">demo</a></p>
+	<p>-moz-placeholder{color:transparent},-webkit-input-placeholder{color:transparent}</p>
+	<p>设置placeholder="xxxxx"的字体颜色</p>
+</div>
+</body>
+</html>
