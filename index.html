@@ -8,6 +8,9 @@
 	<meta content="telephone=no" name="format-detection" />
 	<title>Document</title>
 	<style>
+	body{
+		 -webkit-overflow-scrolling : touch;
+	}
 	textarea{ width: 100%; }
 	.des{
 		padding: 30px 40px 20px;
@@ -73,6 +76,15 @@
 	<p>在webkit下，滚动的时候有弹性，更像原生滚动条一样 <a href="demo/scrolling.html" title="demo">demo</a></p>
 	<p>-moz-placeholder{color:transparent},-webkit-input-placeholder{color:transparent}</p>
 	<p>设置placeholder="xxxxx"的字体颜色</p>
+</div>
+
+<div class="des">
+	<p>检测是终端\浏览器\版本\是否微信浏览器等 ----> <a href="demo/detect.html" title="检测是终端\浏览器\版本等">传送门</a> <---基于zepto框架,然后我做了点小改动,进了DEMO请看控制台</p>
+	<pre>
+	  var ua = detect();
+	  //可以检测是否为微信浏览器用户
+	  console.log(ua.browser,ua.os,ua.browser.weixin);
+	</pre>
 </div>
 </body>
 </html>
