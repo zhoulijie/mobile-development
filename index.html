@@ -39,7 +39,7 @@
 <body>
 <h1>移动端web开发</h1>
 <div class="des">
-	<p>1.移动端CSS RESET <a href="http://blog.csdn.net/jiestyle21/article/details/9243045" title="手机版reset">传送门</a> 2.基于normalize.css RESET <a href="demo/reset.css" title="手机版reset">传送门</a> 3.<a href="http://necolas.github.io/normalize.css/">normalize.css</a></p>
+	<p>1.移动端CSS RESET <a href="http://blog.csdn.net/jiestyle21/article/details/9243045" title="移动端CSS RESET">传送门</a> 2.基于normalize.css RESET <a href="demo/reset.css" title="移动端CSS RESET">传送门</a> 3.<a href="http://necolas.github.io/normalize.css/">normalize.css</a></p>
 </div>
 <div class="des">
 	<p>第一个meta标签表示：强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览；</p>
@@ -48,36 +48,38 @@
 	<p>第四个meta标签表示：告诉设备忽略将页面中的数字识别为电话号码</p>
 	<p>一些其他META.....</p>
 	<textarea name="" id="" cols="30" rows="5">
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
-<meta content="yes" name="apple-mobile-web-app-capable" />
-<meta content="black" name="apple-mobile-web-app-status-bar-style" />
-<meta content="telephone=no" name="format-detection" />
-<!-- 启用360浏览器的极速模式(webkit) -->
-<meta name="renderer" content="webkit">
-<!-- 避免IE使用兼容模式 -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
-<meta name="HandheldFriendly" content="true">
-<!-- 微软的老式浏览器 -->
-<meta name="MobileOptimized" content="320">
-<!-- uc强制竖屏 -->
-<meta name="screen-orientation" content="portrait">
-<!-- QQ强制竖屏 -->
-<meta name="x5-orientation" content="portrait">
-<!-- UC强制全屏 -->
-<meta name="full-screen" content="yes">
-<!-- QQ强制全屏 -->
-<meta name="x5-fullscreen" content="true">
-<!-- UC应用模式 -->
-<meta name="browsermode" content="application">
-<!-- QQ应用模式 -->
-<meta name="x5-page-mode" content="app">
-<!-- windows phone 点击无高光 -->
-<meta name="msapplication-tap-highlight" content="no">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
 	</textarea>
 	<p>视图窗口，移动端特属的标签。一般使用下面这段代码即可,依次表示设置宽度为设备的宽度，默认不缩放，不允许用户缩放（即禁止缩放），在网页加载时隐藏地址栏与导航栏（ios7.1新增）。</p>
 	<textarea name="" id="" cols="30" rows="5">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+//这句在页面宽度定死时还是非常有用的
+<meta name="viewport" content="width=640,user-scalable=no,target-densitydpi=320">
 	</textarea>
 	<textarea name="" id="" cols="30" rows="5">
 width – // [pixel_value | device-width] viewport 的宽度，范围从 200 到 10,000，默认为 980 像素
@@ -123,6 +125,8 @@ target-densitydpi = [dpi_value | device-dpi | high-dpi | medium-dpi | low-dpi] �
 	<p>input{ outline:0;}</p>
 	<p>去掉chrome、safari textarea右下角可拖动鼠标改变textarea大小的方法</p>
 	<p>textarea{ resize:none;}</p>
+	<p>-webkit-font-smoothing</p>
+	<p>webkit引擎中设置字体的抗锯齿或者说光滑度的属性</p>
 </div>
 
 <div class="des">
