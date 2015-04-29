@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.tabs{
+		width: 100%;
+		height: 50px;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		display: table\9;
+		position: relative;
+	}
+	.tabs > a{
+		height: 48px;
+		text-align: center;
+		color: #c00;
+		text-decoration: none;
+		line-height: 48px;
+		-webkit-box-flex: 1;
+		-moz-box-flex: 1;
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		display: table-cell\9;
+	}
+	.tabs > i.bar {
+		width: 50%;
+		height: 2px;
+		display: block;
+		overflow: hidden;
+		background: #099FDE;
+		position: absolute;
+		left: 0;
+		top: 48px;
+		-webkit-transform: translate3d(0,0,0);
+		-moz-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+
+	}
+	.tabs > a:nth-child(2):hover~i.bar,.tabs > a:nth-child(1):hover~i.bar {
+		-webkit-transform: translate3d(100%,0,0);
+		-moz-transform: translate3d(100%,0,0);
+		-ms-transform: translate3d(100%,0,0);
+		transform: translate3d(100%,0,0);
+		-webkit-transition: -webkit-transform 300ms ease-in-out;
+		-moz-transition: -moz-transform 300ms ease-in-out;
+		-ms-transition: -ms-transform 300ms ease-in-out;
+		transition: transform 300ms ease-in-out;
+	}
+	.tabs > a:nth-child(1):hover~i.bar{
+		-webkit-transform: translate3d(0,0,0);
+		-moz-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+	</style>
+</head>
+<body>
+	<div class="tabs">
+		<a href="javascript:;">阳澄湖</a>
+		<a href="javascript:;">大闸蟹</a>
+		<i class="bar"></i>
+	</div>
+</body>
+</html>
